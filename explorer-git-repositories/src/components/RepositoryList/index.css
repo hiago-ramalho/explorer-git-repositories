@@ -21,6 +21,17 @@
   position: relative;
 }
 
+.section h1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.section h1 img {
+  width: 5rem;
+  margin-right: 1rem;
+}
+
 .input-content {
   margin-top: 3rem;
   width: 50%;

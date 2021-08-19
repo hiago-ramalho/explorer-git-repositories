@@ -4,6 +4,7 @@ import api from '../../services/api'
 import { RepositoryItems } from '../RepositoryItems/index'
 
 import './index.css'
+import gitImage from '../../images/github-white.svg'
 
 export function RepositoryList(props) {
   const [userName, setUserName] = useState()
@@ -21,6 +22,7 @@ export function RepositoryList(props) {
       alert(
         'Usuário não encontrado! Por favor, digite um nome de usuário válido!'
       )
+      window.location.reload()
     }
   }
 
@@ -38,7 +40,10 @@ export function RepositoryList(props) {
   return (
     <section className="section">
       <header>
-        <h1 className="title">explorer-git-repositories</h1>
+        <h1 className="title">
+          <img src={gitImage} alt="" srcset="" />
+          explorer-git-repositories
+        </h1>
       </header>
 
       <div className="input-content">
