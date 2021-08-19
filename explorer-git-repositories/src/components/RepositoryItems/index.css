@@ -1,0 +1,32 @@
+li {
+  width: 80%;
+  height: auto;
+
+  margin: 1rem auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+
+  background-color: #39a2db22;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  list-style: none;
+  cursor: text;
+}
+
+.repo-name {
+  font-size: 2rem;
+  font-weight: 700;
+
+  text-decoration: underline;
+}
+
+.repo-description {
+  margin-top: 1rem;
+
+  font-size: 1.4rem;
+  font-weight: 400;
+}

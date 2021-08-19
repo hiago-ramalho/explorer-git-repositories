@@ -1,0 +1,106 @@
+.title {
+  font-size: 4rem;
+}
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+}
+
+.section {
+  margin-top: 2rem;
+  width: 100%;
+
+  position: relative;
+}
+
+.input-content {
+  margin-top: 3rem;
+  width: 50%;
+
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-content .input {
+  width: 50%;
+
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  border: 0;
+  outline: none;
+
+  text-align: center;
+  font-weight: 500;
+}
+
+.input-content .input::placeholder {
+  color: #ddd;
+}
+
+.container {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.container .title {
+  font-size: 3rem;
+}
+
+.container .info-user {
+  width: 40%;
+  padding: 2rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container .info-user .user-avatar {
+  width: 50%;
+}
+
+.container .info-user .user-avatar img {
+  width: 20rem;
+  border-radius: 50%;
+}
+
+.container .user-description {
+  text-align: left;
+  width: 50%;
+}
+
+.container .user-description a.title {
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}
+
+.container .user-description p {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+.container .user-description p:nth-child(1) {
+  font-style: italic;
+}
+
+.content {
+  max-width: 90%;
+  margin: 4rem auto;
+}
+
+.content ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
