@@ -21,13 +21,13 @@
   position: relative;
 }
 
-.section h1 {
-  display: inline-flex;
+.section header {
+  display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-.section h1 img {
+.section header img {
   width: 5rem;
   margin-right: 1rem;
 }
@@ -68,16 +68,17 @@
 }
 
 .container .info-user {
-  width: 40%;
+  width: 50%;
+  margin: 0 auto;
   padding: 2rem;
 
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
 .container .info-user .user-avatar {
-  width: 50%;
+  width: 100%;
 }
 
 .container .info-user .user-avatar img {
@@ -87,7 +88,7 @@
 
 .container .user-description {
   text-align: left;
-  width: 50%;
+  width: 100%;
 }
 
 .container .user-description a.title {
@@ -98,7 +99,7 @@
 }
 
 .container .user-description p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-top: 1rem;
 }
 
@@ -114,4 +115,101 @@
 .content ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+/* responsive */
+
+@media (max-width: 1200px) {
+  .container .info-user {
+    width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  .input-content .input {
+    width: 80%;
+  }
+
+  .container .info-user {
+    width: 100%;
+  }
+
+  .content ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 770px) {
+  .section header {
+    flex-direction: column;
+  }
+
+  .input-content {
+    width: 100%;
+  }
+
+  .input-content .input {
+    width: 60%;
+  }
+
+  .content ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .section {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section header {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section header .title {
+    word-wrap: break-word;
+  }
+
+  .input-content {
+    margin: 3rem auto 0 auto;
+    width: 80%;
+  }
+
+  .input-content .input {
+    width: 90%;
+  }
+
+  .input-content .button {
+    width: 50%;
+  }
+
+  .container .info-user {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .info-user .user-description {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .info-user .user-description a.title {
+    font-size: 3rem;
+  }
+
+  .info-user .user-description p {
+    font-size: 1.6rem;
+  }
 }

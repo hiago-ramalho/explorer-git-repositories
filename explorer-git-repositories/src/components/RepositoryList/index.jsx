@@ -40,10 +40,8 @@ export function RepositoryList(props) {
   return (
     <section className="section">
       <header>
-        <h1 className="title">
-          <img src={gitImage} alt="" srcset="" />
-          explorer-git-repositories
-        </h1>
+        <img src={gitImage} alt="" srcSet="" />
+        <h1 className="title">github repositories explorer</h1>
       </header>
 
       <div className="input-content">
