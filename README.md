@@ -1,4 +1,4 @@
-# explorer-git-repositories
+# explorer-git-repositories 🔎
 
 Treinando meus conhecimentos em JavaScript, ReactJS, Html e Css consumindo a API do GitHub com Ajax.
 
@@ -6,7 +6,7 @@ Treinando meus conhecimentos em JavaScript, ReactJS, Html e Css consumindo a API
   <img src="./explorer-git-repositories/src/images/print1.png" width=70% /> <img src="./explorer-git-repositories/src/images/print2.png" width=70% />
 </div>
 
-## Tecnologias usadas:
+## 🚀 Tecnologias usadas:
 
 - HTML
 - CSS
@@ -15,7 +15,7 @@ Treinando meus conhecimentos em JavaScript, ReactJS, Html e Css consumindo a API
 - ReactJS
 - Ajax
 
-## Funcionalidades:
+## 📲 Funcionalidades:
 
 - Ao digitar o nome de um usuário válido, a aplicação irá retornar:
   - Um header com o avatar, nome, bio, empresa e localidade do usuário;
